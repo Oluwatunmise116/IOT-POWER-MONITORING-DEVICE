@@ -142,4 +142,3 @@ Steps:
 
 ### Licenses & Credits
 - Microcontroller core, libraries, and footprints belong to their respective owners.
-- Hardware/firmware in this repository are provided “as‑is” for educational use.
