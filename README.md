@@ -101,7 +101,7 @@ static const char* subscribeTopic= "devices/esp32-power/cmd";
 
 ## 6) Quick Test
 
-1. Power the board (via VIN or USB) and join Wi‑Fi.  
+1. Power the board 
 2. Confirm serial logs print lines like:  
    ```
    Voltage: 227.8 V, Current: 250 mA, Power: 56.95 W
