@@ -78,7 +78,7 @@ static const char* subscribeTopic= "devices/esp32-power/cmd";
    - Board: *ESP32 Dev Module*.
    - Port: the **CP2102** COM port (install Silicon Labs CP210x driver if needed).
 3. **Enter Download Mode (only if auto‑boot doesn’t trigger)**
-   - Hold **BOOT**, tap **RESET**, release **RESET**, then release **BOOT**.
+   - Hold **BOOT**, then release **BOOT**.
 4. **Upload**
    - Sketch → Upload.
 5. **Open Serial Monitor @ 115200** to see logs (`Meter: V=... I=... P=...`).
@@ -104,10 +104,13 @@ static const char* subscribeTopic= "devices/esp32-power/cmd";
 1. Power the board (via VIN or USB) and join Wi‑Fi.  
 2. Confirm serial logs print lines like:  
    ```
-   Meter: V=231.0 V | I=120 mA | P=27.72 W
+   Voltage: 227.8 V, Current: 250 mA, Power: 56.95 W
    ```
-3. On your PC, run an MQTT client and `SUB` to your publish topic (e.g., `devices/esp32-power/metrics`).  
-4. You should receive JSON payloads every ~2 seconds.
+3. Confirm publish to cloud via serial:  
+   ```
+   Published: {"voltage":227.8,"current":250,"power":56.95}
+   ```
+4. You should receive JSON payloads every ~5 seconds.
 
 
 ## 7) Folder Hints
