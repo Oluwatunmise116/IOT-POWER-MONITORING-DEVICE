@@ -44,7 +44,7 @@ The firmware publishes a compact JSON object:
   - **TLS:** `test.mosquitto.org:8883`  
 - Firmware currently calls `setInsecure()` (skips CA validation). **Use a CA (`setCACert`) for production.**
 
-### Sample `secrets.h`
+### The `secrets.h` File
 ```cpp
 #pragma once
 // Wi‑Fi
