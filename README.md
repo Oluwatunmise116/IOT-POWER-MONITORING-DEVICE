@@ -111,7 +111,7 @@ static const char* subscribeTopic = "devices/esp32-power/cmd";
 
 ## 7) Cloud Verification — Data Received on HiveMQ Cloud
 
-![HiveMQ Cloud — Messages]([344074d6-5e1c-4e63-b0bc-b956998c3cb1.png](https://github.com/Oluwatunmise116/IOT-POWER-MONITORING-DEVICE/blob/main/Cloud%20Server%20.png))
+<img width="1918" height="982" alt="Image" src="https://github.com/user-attachments/assets/f8bb3443-8ea6-4c25-9a7e-0bc82de5723a" />
 
 Steps:
 1. Open your HiveMQ Cloud cluster → **Web Client**.  
